@@ -17,7 +17,7 @@ class TamagochiGem
     file = File.open(@sourse, "r+")
     file.each { |line|
     if line.match(/<body>/)
-    file.puts(@char)
+    file.puts("<p>#{@char}</p>")
     end
     }
   end
